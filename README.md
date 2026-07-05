@@ -1,3 +1,7 @@
+<img src="assets/banner.png">
+
+---
+
 # Password Generator
 
 A secure password generator built in Python using the standard `secrets` module. This tool allows you to easily generate numeric PINs, complex character-based passwords, and highly secure, readable passphrases.
