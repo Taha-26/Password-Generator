@@ -4,13 +4,13 @@
 
 # Password Generator
 
-A secure password generator built in Python using the standard `secrets` module. This tool allows you to easily generate numeric PINs, complex character-based passwords, and highly secure, readable passphrases.
+A responsive web application built with Python and **Streamlit** that generates secure passwords, custom PINs, and memorable passphrases. It leverages Python's built-in `secrets` module to ensure all outputs are cryptographically sound and secure against predictability.
 
 Author: [M.A Mohammadi](https://github.com/Taha-26)
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
 * **Secure PIN Generation:** Create numeric-only PIN codes of any length.
 * **Customizable Alpha-Numeric Passwords:** Generate passwords with configurable options to include or exclude digits and special symbols (`string.punctuation`).
@@ -27,42 +27,38 @@ Author: [M.A Mohammadi](https://github.com/Taha-26)
 ├── utils/
 │   ├── __init__.py
 │   └── Password.py        # Core password generation logic
-└── main.py                # Main entry point and demo script
+└── app.py                 # Streamlit UI interface & entry point
 ```
 ---
-## 🛠️ Getting Started
-### Prerequisites
-- Python 3.8 or higher is recommended.
+## 🚀 Getting Started
 
-### Setup & Usage
+### Prerequisites
+
+Make sure you have Python installed on your system. You will need the `streamlit` package to run the graphical web interface.
+
+### Installation
 1. Clone the repository:
     ```shell
-    git clone [https://github.com/Taha-26/Password-Generator.git](https://github.com/Taha-26/Password-Generator.git);cd Password-Generator
-    ```
-2. Prepare the Word List:
-Make sure you have a data folder in the root directory containing a words.txt file. Add some words to it (each word on a new line) so the passphrase generator functions correctly.
+    git clone https://github.com/Taha-26/Password-Generator.git
 
-3. Run the Demo:
-    Execute the main script to see the generator in action:
+    cd Password-Generator
+    ```
+2. Install dependencies:
     ```shell
-    python main.py
+    pip install streamlit=1.58.0
     ```
+3. Provide a Wordlist File:
+
+    Ensure you have a text file filled with newline-separated words located precisely under `data/words`.txt for the random passphrase feature to work correctly.
+
 ---
-## 💻 Quick Code Example
-You can easily import the Password class into your own modules:
-```python
-Python
-from utils.Password import Password
 
-# 1. Generate a 6-digit numeric PIN
-pin = Password.pin_code(6)
-print(f"PIN: {pin}")
+## 🛠️ How to Run
 
-# 2. Generate a 16-character strong password with numbers and symbols
-secure_pwd = Password.random_char(16, has_digit=True, has_symbol=True)
-print(f"Password: {secure_pwd}")
+Launch the Streamlit server from your terminal inside the project directory:
 
-# 3. Generate a 4-word memorable passphrase
-passphrase = Password.random_word(4, separator="_", capitalize=True)
-print(f"Passphrase: {passphrase}")
+```shell
+streamlit run src/app.py
 ```
+---
+Once executed, a local browser window will open automatically at `http://localhost:8501`.
