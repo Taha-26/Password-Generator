@@ -6,7 +6,7 @@
 
 A responsive web application built with Python and **Streamlit** that generates secure passwords, custom PINs, and memorable passphrases. It leverages Python's built-in `secrets` module to ensure all outputs are cryptographically sound and secure against predictability.
 
-Author: [M.A Mohammadi](https://github.com/Taha-26)
+Author: [M.A Mohammadi](https://github.com/AmiinMohammadi)
 
 ---
 
@@ -39,7 +39,7 @@ Make sure you have Python installed on your system. You will need the `streamlit
 ### Installation
 1. Clone the repository:
     ```shell
-    git clone https://github.com/Taha-26/Password-Generator.git
+    git clone https://github.com/AmiinMohammadi/Password-Generator.git
 
     cd Password-Generator
     ```
