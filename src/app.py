@@ -3,7 +3,7 @@
 This script manages the frontend web interface using Streamlit, allowing users
 to interactively generate cryptographically secure PINs, passwords, and passphrases.
 
-Author: https://github.com/Taha-26
+Author: https://github.com/AmiinMohammadi
 """
 
 import streamlit as st
